@@ -16,8 +16,8 @@ class TrainsSeeder extends Seeder
         $trains = [
             [
                 "Azienda" => "Trenitalia",
-                "Stazione di partenza" => "Catania",
-                "Stazione di arrivo" => "Reggio",
+                "Stazione di partenza" => "Torino",
+                "Stazione di arrivo" => "Milano",
                 "Orario di partenza"=>"16:30",
                 "Orario di arrivo"=>"19:04",
                 "Codice Treno" => "23238",
@@ -25,12 +25,12 @@ class TrainsSeeder extends Seeder
                 "In orario"=>false,
                 "Cancellato"=>false,
                 "NomeTreno" => "Andria-Toronto",
-                "DataPartenza" => "2022-07-29",
+                "DataPartenza" => "2023-07-29",
                 "OraPartenza" => ""
             ],
             [
                 "Azienda" => "Trenitalia",
-                "Stazione di partenza" => "Palermo",
+                "Stazione di partenza" => "Verona",
                 "Stazione di arrivo" => "Catania",
                 "Orario di partenza"=>"12:30",
                 "Orario di arrivo"=>"15:04",
@@ -39,12 +39,12 @@ class TrainsSeeder extends Seeder
                 "In orario"=>false,
                 "Cancellato"=>true,
                 "NomeTreno" => "Palermo-Toronto",
-                "DataPartenza" => "2022-07-29",
+                "DataPartenza" => "2023-07-29",
                 "OraPartenza" => ""
             ],
             [
                 "Azienda" => "Italo",
-                "Stazione di partenza" => "Bergamo",
+                "Stazione di partenza" => "Lecco",
                 "Stazione di arrivo" => "Torino",
                 "Orario di partenza"=>"10:30",
                 "Orario di arrivo"=>"20:04",
@@ -53,7 +53,7 @@ class TrainsSeeder extends Seeder
                 "In orario"=>false,
                 "Cancellato"=>false,
                 "NomeTreno" => "Trapani-Toronto",
-                "DataPartenza" => "2022-07-29",
+                "DataPartenza" => "2023-07-29",
                 "OraPartenza" => ""
             ]
 
@@ -77,6 +77,7 @@ class TrainsSeeder extends Seeder
 
             $data->InOrario = $train["In orario"];
             $data->Cancellato = $train["Cancellato"];
+            $data->DataPartenza=$train["DataPartenza"];
 
 
 

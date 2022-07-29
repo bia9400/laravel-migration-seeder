@@ -25,6 +25,7 @@ class CreateTrainsTable extends Migration
             $table->smallInteger("NumeroCarrozze");
             $table->boolean("InOrario");
             $table->boolean("Cancellato");
+            $table->date("DataPartenza");
 
         });
     }

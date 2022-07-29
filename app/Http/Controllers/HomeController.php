@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     function index() {
 
-        
-        return view('HomeController');
+        $trains=Train::all()->where("DataPartenza","2022-07-29");
+        return view('HomePage',compact("trains"));
     }
 }
